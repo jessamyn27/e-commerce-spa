@@ -948,6 +948,9 @@ body {
     width: 100%;
   }
 
+  .main .carousel__card--copy-wrapper {
+    min-width: 220px;
+  }
   .main .carousel__card--title {
     font-size: 31px;
     line-height: 35px;
@@ -957,7 +960,7 @@ body {
   .main .carousel__card--button {
     height: 28px;
     font-size: 14px;
-    width: 200px;
+    width: 210px;
   }
   .main .collections__card--icon {
     display: none;

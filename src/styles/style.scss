@@ -1138,6 +1138,10 @@ body {
 
 	.main {
 		.carousel {
+			&__card--copy-wrapper {
+				min-width: 220px;
+			}
+
 			&__card--title {
 				font-size: 31px;
 				line-height: 35px;
@@ -1148,7 +1152,7 @@ body {
 			&__card--button {
 				height: 28px;
 				font-size: 14px;
-				width: 200px;
+				width: 210px;
 			}
 		}
 
