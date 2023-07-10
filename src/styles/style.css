@@ -145,6 +145,10 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+input {
+  background: #ffffff;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);

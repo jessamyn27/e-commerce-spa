@@ -141,6 +141,10 @@ input[type='search']::-webkit-search-results-decoration {
 	display: none;
 }
 
+input {
+	background: #ffffff;
+}
+
 // JOT page styling
 @mixin OpenSans {
 	font-family: 'Open Sans', sans-serif;
