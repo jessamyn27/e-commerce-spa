@@ -144,7 +144,14 @@ input[type='search']::-webkit-search-results-decoration {
 input {
 	background: #ffffff;
 
-	&:focus {
+	&:focus,
+	&:active,
+	&:disabled,
+	&:visited,
+	&:focus-within,
+	&:target,
+	&:hover,
+	&:focus-visible {
 		outline: none;
 	}
 }

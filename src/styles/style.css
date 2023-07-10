@@ -148,7 +148,7 @@ input[type=search]::-webkit-search-results-decoration {
 input {
   background: #ffffff;
 }
-input:focus {
+input:focus, input:active, input:disabled, input:visited, input:focus-within, input:target, input:hover, input:focus-visible {
   outline: none;
 }
 
