@@ -108,6 +108,7 @@ section {
 body {
   line-height: 1;
   margin: 0;
+  overflow-x: hidden;
 }
 
 ol,
@@ -282,8 +283,9 @@ body {
   font-size: 40px;
   font-weight: 300;
   position: absolute;
-  top: 10px;
   right: 10px;
+  top: 10px;
+  z-index: 2;
 }
 
 .nav {
@@ -367,6 +369,7 @@ body {
   position: relative;
 }
 .nav__search--input::placeholder {
+  background-color: #ffffff;
   color: #a8a8a8;
   font-size: 13px;
   font-weight: 200;
@@ -829,7 +832,7 @@ body {
   }
   .main .trending__title {
     font-size: 20px;
-    margin: 30px 0 15px;
+    margin: 20px 0 20px;
   }
   .main .trending__card {
     margin: 0;
@@ -923,10 +926,10 @@ body {
   }
 
   .main .carousel__card--title {
-    font-size: 20px;
+    font-size: 29px;
     line-height: 1.4;
-    margin: 22px 0 0 0;
-    width: 150px;
+    margin: 0 7px 0 0;
+    width: 210px;
   }
   .main .collections__card--icon {
     display: none;
