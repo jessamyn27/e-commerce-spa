@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http--equiv="X--UA--Compatible" content="ie=edge">
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png">
+    <title>JOT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    </head>
+    <body>        
+        <div class="banner">
+            <h4 class="banner__text">extra 20% off jot credit card purchases. use&nbspcode&nbspjotcard.
+            </h4>
+        </div>
+        <div class="page">
+            <header class="header">
+                <div class="header__login-and-bag--wrapper">
+                    <div class="header__login">
+                        <i class="header__login--icon fa-solid fa-circle-user" width="18px" height="18px"></i>
+                        <h4 class="header__login--text">Sign In</h4>    
+                    </div>
+                    <div class="header__bag">
+                        <img class="header__bag--icon" src="./assets/images/icons-logos/sprite.svg#bag" width="15.75px" height="18px" alt=""></i>
+                        <h4 class="header__bag--text">Shopping Bag</h4>    
+                    </div>
+                </div>
+                <div class="header__logo--wrapper">
+                    <img class="header__logo" src="./assets/images/icons-logos/sprite.svg#jot-logo" width="83.9514893px" height="43.9688826px" alt=""/>
+                </div>
+            </header>
+            <nav class="nav">
+                <div class="nav__categories-search--wrapper">
+                    <ul class="nav__categories">
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">women</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">men</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">new arrivals</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">denim</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">jackets</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">accessories</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">athletics</a>
+                        </li>
+                        <li>
+                            <a class="nav__category" onmouseover="slidebar(event)">sale</a>
+                        </li>
+                    </ul>
+                    <div class="nav__search">
+                        <form action="/" method="get" id="search" class="nav__search--form">
+                            <input type="search" class="nav__search--input" placeholder="Search">
+                            <button type="submit" class=" nav__search--button fa-solid fa-magnifying-glass">
+                            </button>
+                        </input>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav__mobile">
+                    <form action="/" method="get" id="search" class="nav__mobile--search-form">
+                        <input type="search" class="nav__search--input" placeholder="Search">
+                        <button type="submit" class=" nav__search--button fa-solid fa-magnifying-glass">
+                        </button>
+                    </input>
+                    </form>
+                    <div class="header__login-and-bag--wrapper">
+                        <div class="header__login">
+                            <i class="header__login--icon fa-solid fa-circle-user"></i>
+                        </div>
+                        <div class="header__bag">
+                            <i class="header__bag--icon fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="header__navbar">
+                            <i class="header__navbar--icon fa-solid fa-bars" onclick="openNav()"></i>
+                            <div id="myNav" class="header__navbar--toggle header__navbar--overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <ul class="nav__categories mobile header__navbar--overlay-content">
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">women</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">men</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">new arrivals</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">denim</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">jackets</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">accessories</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">athletics</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav__category" onmouseover="slidebar(event)">sale</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main class="main">
+                <div class="carousel">
+                    <div class="carousel__arrow carousel__arrow--left"><img src="./assets/images/icons-logos/sprite.svg#arrow-left" /></div>
+                    <div>
+                        <div class="carousel__card">
+                            <div class="carousel__card--content">
+                                <img 
+                                class="carousel__card--bg" 
+                                srcset="
+                                ./assets/images/carousel/carousel-brown-shirt.png 1440w,
+                                ./assets/images/carousel/carousel-brown-shirt-2x.png 2880w"
+                                sizes="(max-width: 1200px) 1440px, 2880px"
+                                src="./assets/images/carousel/carousel-brown-shirt-2x.png";
+                                alt=""/>
+                                <div class="carousel__card--copy-wrapper">
+                                    <h1 class="carousel__card--title">The Looks of the Season</h1>
+                                    <p class="carousel__card--text">The newest addition to our Perfect Vintage Jean fam has arrived. A classic fitted waist meets laid-back wide legs to strike juuust the right balance.</p>
+                                    <button class="carousel__card--button btn-one">shop all the looks</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__card">
+                            <div class="carousel__card--content">
+                                <img 
+                                class="carousel__card--bg" 
+                                srcset="
+                                ./assets/images/carousel/carousel-sweater.png 1440w,
+                                ./assets/images/carousel/carousel-sweater-2x.png 2880w" 
+                                sizes="(max-width: 1200px) 1440px, 2880px" 
+                                src="./assets/images/carousel/carousel-sweater-2x.png" 
+                                alt=""/>
+                                <div class="carousel__card--copy-wrapper">
+                                    <h1 class="carousel__card--title test">The Looks of the Season</h1>
+                                    <p class="carousel__card--text">The newest addition to our Perfect Vintage Jean fam has arrived. A classic fitted waist meets laid-back wide legs to strike juuust the right balance.</p>
+                                    <button class="carousel__card--button btn-two">shop all the looks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__arrow carousel__arrow--right"><img src="./assets/images/icons-logos/sprite.svg#arrow-right" /></div>
+                </div>
+
+                <section class="collections">
+                    <div class="collections__card">
+                        <img 
+                        class="collections__card--image" 
+                        srcset="
+                        ./assets/images/collections/fresh-appeal.png 720w, 
+                        ./assets/images/collections/fresh-appeal-2x.png 1440w" 
+                        sizes="(max-width: 720px) 720px, 1440px" 
+                        src="./assets/images/collections/fresh-appeal-2x.png" 
+                        alt=""/>
+                        <div class="collections__card--wrapper">
+                            <h1 class="collections__card--title">Fresh Appeal</h1>
+                            <div class="collections__card--button-wrapper">
+                                <a role="button" href="" class="collections__card--button">shop the collection<img src="./assets/images/icons-logos/sprite.svg#pointer-right-lg" alt="" class="collections__card--icon" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collections__card">
+                        <img 
+                        class="collections__card--image" 
+                        srcset="
+                        ./assets/images/collections/dressed-up.png 720w, 
+                        ./assets/images/collections/dressed-up-2x.png 1440w" 
+                        sizes="(max-width: 720px) 720px, 1440px" 
+                        src="./assets/images/collections/dressed-up-2x.png" 
+                        alt=""/>
+                        <div class="collections__card--wrapper">
+                            <h1 class="collections__card--title">Dressed Up</h1>
+                            <div class="collections__card--button-wrapper">
+                                <a role="button" href="" class="collections__card--button">shop the collection<img src="./assets/images/icons-logos/sprite.svg#pointer-right" alt="" class="collections__card--icon" />
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="rewards">
+                    <img class="rewards__image" src="./assets/images/icons-logos/sprite.svg#triangle" alt=""/>
+                    <div class="rewards__title--wrapper">
+                        <h2 class="rewards__title">JOT&nbspRewards. Sign&nbspUp&nbspfor the&nbspPerks.</h2>
+                        <h4 class="rewards__title--text">All we need is an email and a password!</h4>
+                    </div>
+                    <ul class="rewards__value-props--wrapper">
+                        <li class="rewards__value-prop">
+                            <img src="./assets/images/icons-logos/sprite.svg#shipping" alt="" class="rewards__value-prop--icon"></img>
+                            <div class="rewards__value-prop--text-wrapper">
+                                <h6 class="rewards__value-prop--title">free shipping</h6>
+                                <p class="rewards__value-prop--text">Every day, on every order at Jot.</p>
+                            </div>
+                        </li>
+                        <li class="rewards__value-prop">
+                            <img src="./assets/images/icons-logos/sprite.svg#rewards" alt="" class="rewards__value-prop--icon"></img>
+                            <div class="rewards__value-prop--text-wrapper">
+                                <h6 class="rewards__value-prop--title">rewards</h6>
+                                <p class="rewards__value-prop--text">Earn reward points for every $ spent.</p>
+                            </div>
+                        </li>
+                        <li class="rewards__value-prop">
+                            <img src="./assets/images/icons-logos/sprite.svg#access" alt="" class="rewards__value-prop--icon"></img>
+                            <div class="rewards__value-prop--text-wrapper">
+                                <h6 class="rewards__value-prop--title">special access</h6>
+                                <p class="rewards__value-prop--text">Early access, double points and more.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="rewards__button--wrapper">
+                        <a role="button" href="" class="rewards__button">sign up now</a>
+                    </div>
+                </section>
+                <section class="trending">
+                    <h4 class="trending__title">Most Shopped Right Now</h4>
+                        <div class="trending__card--carousel">
+                            <ul class="trending__card--wrapper">
+                                <li class="trending__card">
+                                    <div class="trending__card--image-wrapper">
+                                        <img 
+                                        class="trending__card--image"
+                                        srcset="
+                                        ./assets/images/trending/new-arrival-purse.png 264w,
+                                        ./assets/images/trending/new-arrival-purse-2x.png 528w"
+                                        sizes="(max-width: 768px) 264px, 528px"
+                                        src="./assets/images/trending/new-arrival-purse-2x.png"
+                                        alt=""
+                                        />
+                                        <div class="trending__card--button-wrapper">
+                                            <a role="button" href="" class="trending__card--button">shop
+                                            </a>
+                                            <img src="./assets/images/icons-logos/sprite.svg#pointer-right" alt="" class="trending__card--icon" />
+                                        </div>
+                                    </div>
+                                    <h6 class="trending__card--banner">New Arrival</h6>
+                                    <h6 class="trending__card--title">Brown Textured Purse with <br/>Gold Chain</h6>
+                                    <h6 class="trending__card--price" type="number">$187.00</h6>
+                                </li>
+                                <li class="trending__card">
+                                    <div class="trending__card--image-wrapper">
+                                        <img 
+                                        src="./assets/images/trending/new-arrival-dress-2x.png"
+                                        class="trending__card--image"
+                                        srcset="
+                                        ./assets/images/trending/new-arrival-dress.png 264w,
+                                        ./assets/images/trending/new-arrival-dress-2x.png 528w"
+                                        sizes="(max-width: 768px) 264px, 528px"
+                                        alt="" 
+                                        />
+                                        <div class="trending__card--button-wrapper">
+                                            <a role="button" href="" class="trending__card--button">shop
+                                            </a>
+                                            <img 
+                                            src="./assets/images/icons-logos/sprite.svg#pointer-right" alt="" class="trending__card--icon" />
+                                        </div>
+                                    </div>
+                                    <h6 class="trending__card--banner">New Arrival</h6>
+                                    <h6 class="trending__card--title">Dark Green Canvas Romper <br/>and Belt</h6>
+                                    <h6 class="trending__card--price" type="number">$68.00</h6>
+                                </li>
+                                <li class="trending__card">
+                                    <div class="trending__card--image-wrapper">
+                                        <img
+                                        class="trending__card--image"
+                                        srcset="
+                                        ./assets/images/trending/new-arrival-shoes.png 264w,
+                                        ./assets/images/trending/new-arrival-shoes-2x.png 528w"
+                                        sizes="(max-width: 768px) 264px, 528px"
+                                        src="./assets/images/trending/new-arrival-shoes-2x.png"
+                                        alt=""
+                                        />
+                                        <div class="trending__card--button-wrapper">
+                                            <a role="button" href="" class="trending__card--button">shop
+                                            </a>
+                                            <img src="./assets/images/icons-logos/sprite.svg#pointer-right" alt="" class="trending__card--icon" />
+                                        </div>
+                                    </div>
+                                    <h6 class="trending__card--banner">New Arrival</h6>
+                                    <h6 class="trending__card--title">Women's Floral Blue Rose <br/>Pumps</h6>
+                                    <h6 class="trending__card--price" type="number">$99.00</h6>
+                                </li>
+                                <li class="trending__card">
+                                    <div class="trending__card--image-wrapper">
+                                        <img
+                                        class="trending__card--image"
+                                        srcset="
+                                        ./assets/images/trending/new-arrival-shirt.png 264w,
+                                        ./assets/images/trending/new-arrival-shirt-2x.png 528w"
+                                        sizes="(max-width: 768px) 264px, 528px"
+                                        src="./assets/images/trending/new-arrival-shirt-2x.png"
+                                        alt=""
+                                        />
+                                        <div class="trending__card--button-wrapper">
+                                            <a role="button" href="" class="trending__card--button">shop
+                                            </a>
+                                            <img src="./assets/images/icons-logos/sprite.svg#pointer-right" alt="" class="trending__card--icon" />
+                                        </div>
+                                    </div>
+                                    <h6 class="trending__card--banner">New Arrival</h6>
+                                    <h6 class="trending__card--title">Blue Denim Polka Dot Shirt</h6>
+                                    <h6 class="trending__card--price" type="number">$52.00</h6>
+                                </li>
+                                <li class="trending__card">
+                                    <div class="trending__card--image-wrapper">
+                                        <img 
+                                        class="trending__card--image"
+                                        srcset="
+                                        ./assets/images/trending/new-arrival-bag.png 264w,
+                                        ./assets/images/trending/new-arrival-bag-2x.png 528w"
+                                        sizes="(max-width: 768px) 264px, 528px"
+                                        src="./assets/images/trending/new-arrival-bag-2x.png" 
+                                        alt=""
+                                        />
+                                        <div class="trending__card--button-wrapper">
+                                            <a role="button" href="" class="trending__card--button">shop
+                                            </a>
+                                            <img src="./assets/images/icons-logos/sprite.svg#pointer-right" alt="" class="trending__card--icon" />
+                                        </div>
+                                    </div>
+                                    <h6 class="trending__card--banner">New Arrival</h6>
+                                    <h6 class="trending__card--title">Brown Leather Satchell</h6>
+                                    <h6 class="trending__card--price" type="number">$264.00</h6>
+                                </li>
+                            </ul>  
+                        </div>
+                </section>
+            </main>
+        </div>
+        <!---- scripts ---->
+        <script src="https://kit.fontawesome.com/305b222fd2.js" crossorigin="anonymous"></script>
+        <script src="/src/scripts/script.js"></script>
+    </body>
+</html>
