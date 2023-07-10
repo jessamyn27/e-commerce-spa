@@ -504,6 +504,7 @@ body {
 }
 .main .carousel__card--copy-wrapper {
   left: 18%;
+  min-width: 220px;
   position: absolute;
   top: 49%;
   transform: translate(-18%, -49%);
