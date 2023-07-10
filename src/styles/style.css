@@ -149,6 +149,7 @@ input {
   background: #ffffff;
 }
 input:focus, input:active, input:disabled, input:visited, input:focus-within, input:target, input:hover, input:focus-visible {
+  border: none;
   outline: none;
 }
 
@@ -558,7 +559,7 @@ body {
 .main .collections {
   display: flex;
   margin-top: 30px;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
 }
 .main .collections__card {

@@ -152,6 +152,7 @@ input {
 	&:target,
 	&:hover,
 	&:focus-visible {
+		border: none;
 		outline: none;
 	}
 }
@@ -649,7 +650,7 @@ body {
 	.collections {
 		display: flex;
 		margin-top: 30px;
-		overflow-x: hidden;
+		overflow: hidden;
 		width: 100%;
 
 		&__card {
