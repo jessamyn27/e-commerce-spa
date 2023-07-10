@@ -130,6 +130,10 @@ table {
 	border-spacing: 0;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none;
+}
+
 // JOT page styling
 @mixin OpenSans {
 	font-family: 'Open Sans', sans-serif;
@@ -161,6 +165,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1500px;
+	overflow-x: hidden;
 	width: calc(100vw - 160px);
 }
 
@@ -170,6 +175,7 @@ body {
 	display: flex;
 	height: 50px;
 	justify-content: center;
+	overflow-x: hidden;
 	width: 100%;
 
 	&__text {
@@ -197,6 +203,7 @@ body {
 		&--wrapper {
 			display: flex;
 			justify-content: center;
+			margin-top: 10px;
 		}
 	}
 
@@ -329,6 +336,7 @@ body {
 .nav {
 	margin: 32px 80px 18px;
 	max-width: 1500px;
+	overflow: hidden;
 	width: 100%;
 
 	&__categories {
@@ -518,9 +526,11 @@ body {
 .main {
 	margin: 0 80px;
 	max-width: 1500px;
+	overflow-x: hidden;
 	width: calc(100vw - 160px);
 
 	.carousel {
+		overflow-x: hidden;
 		position: relative;
 
 		&__arrow {
@@ -616,6 +626,7 @@ body {
 	.collections {
 		display: flex;
 		margin-top: 30px;
+		overflow-x: hidden;
 		width: 100%;
 
 		&__card {
@@ -692,9 +703,10 @@ body {
 		align-items: center;
 		background: transparent;
 		display: flex;
-		height: 324px;
+		height: 330px;
 		justify-content: space-around;
 		margin-top: 30px;
+		overflow: hidden;
 		position: relative;
 		width: 100%;
 		z-index: 0;
@@ -801,6 +813,8 @@ body {
 		}
 	}
 	.trending {
+		overflow-x: hidden;
+
 		&__arrow {
 			display: none;
 		}
@@ -1117,10 +1131,16 @@ body {
 	.main {
 		.carousel {
 			&__card--title {
-				font-size: 29px;
-				line-height: 1.4;
-				margin: 0 7px 0 0;
-				width: 210px;
+				font-size: 31px;
+				line-height: 35px;
+				margin: 0 0 19px 0;
+				width: 204px;
+			}
+
+			&__card--button {
+				height: 28px;
+				font-size: 14px;
+				width: 200px;
 			}
 		}
 

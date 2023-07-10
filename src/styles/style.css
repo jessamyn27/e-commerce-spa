@@ -134,6 +134,10 @@ table {
   border-spacing: 0;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -155,6 +159,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1500px;
+  overflow-x: hidden;
   width: calc(100vw - 160px);
 }
 
@@ -164,6 +169,7 @@ body {
   display: flex;
   height: 50px;
   justify-content: center;
+  overflow-x: hidden;
   width: 100%;
 }
 .banner__text {
@@ -190,6 +196,7 @@ body {
 .header__logo--wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 .header__login {
   align-items: center;
@@ -291,6 +298,7 @@ body {
 .nav {
   margin: 32px 80px 18px;
   max-width: 1500px;
+  overflow: hidden;
   width: 100%;
 }
 .nav__categories {
@@ -449,9 +457,11 @@ body {
 .main {
   margin: 0 80px;
   max-width: 1500px;
+  overflow-x: hidden;
   width: calc(100vw - 160px);
 }
 .main .carousel {
+  overflow-x: hidden;
   position: relative;
 }
 .main .carousel__arrow {
@@ -533,6 +543,7 @@ body {
 .main .collections {
   display: flex;
   margin-top: 30px;
+  overflow-x: hidden;
   width: 100%;
 }
 .main .collections__card {
@@ -596,9 +607,10 @@ body {
   align-items: center;
   background: transparent;
   display: flex;
-  height: 324px;
+  height: 330px;
   justify-content: space-around;
   margin-top: 30px;
+  overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 0;
@@ -688,6 +700,9 @@ body {
 }
 .main .rewards__button--wrapper:hover .rewards__button {
   color: #000000;
+}
+.main .trending {
+  overflow-x: hidden;
 }
 .main .trending__arrow {
   display: none;
@@ -926,10 +941,15 @@ body {
   }
 
   .main .carousel__card--title {
-    font-size: 29px;
-    line-height: 1.4;
-    margin: 0 7px 0 0;
-    width: 210px;
+    font-size: 31px;
+    line-height: 35px;
+    margin: 0 0 19px 0;
+    width: 204px;
+  }
+  .main .carousel__card--button {
+    height: 28px;
+    font-size: 14px;
+    width: 200px;
   }
   .main .collections__card--icon {
     display: none;
