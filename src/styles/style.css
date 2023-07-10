@@ -148,6 +148,9 @@ input[type=search]::-webkit-search-results-decoration {
 input {
   background: #ffffff;
 }
+input:focus {
+  outline: none;
+}
 
 @keyframes slide {
   from {
